@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_small">
+        <jda-form onvalidcodenumber={handleValidCodeNumber}></jda-form>
+    </div>
+    <template if:true={isValidCodeNumber}>
+        <div class="slds-card slds-m-around_small">
+            <div class="slds-p-around_small">
+                <div class="slds-card__body">
+                    <jda-path code-number={codeNumber}></jda-path>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

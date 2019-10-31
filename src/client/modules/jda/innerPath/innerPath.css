@@ -1,0 +1,9 @@
+.inner-implementation-phase,
+li.slds-path__item.slds-is-current.slds-is-active.inner-implementation-phase::before,
+li.slds-path__item.slds-is-current.slds-is-active.inner-implementation-phase::after {
+    background: #33c9f5 !important;
+}
+
+.slds-path__nav .slds-is-active:first-child .slds-path__link {
+    cursor: default !important;
+}

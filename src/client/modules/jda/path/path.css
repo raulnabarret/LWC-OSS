@@ -1,0 +1,14 @@
+.lead-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 77px;
+}
+
+.lead-box svg {
+    fill: #666;
+    display: block;
+    margin: 0 auto;
+}

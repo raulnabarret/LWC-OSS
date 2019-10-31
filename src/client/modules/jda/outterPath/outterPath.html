@@ -1,0 +1,455 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <!--Header-->
+        <div
+            class="slds-size_12-of-12 slds-m-bottom_xx-small slds-grid slds-wrap"
+        >
+            <!--Phases-->
+            <div
+                class="slds-size_12-of-12 slds-m-bottom_xx-small slds-grid slds-grid_align-spread"
+            >
+                <span class="slds-text-title_caps"
+                    >Opportunity Phase / Sales</span
+                >
+                <span class="slds-text-title_caps">Implementation Phase</span>
+                <span class="slds-text-title_caps"
+                    >Continouos Improvement / Steady State</span
+                >
+            </div>
+            <!--Phases-->
+            <!--Timeline-->
+            <div
+                class="slds-size_12-of-12 slds-grid slds-grid_align-spread timeline-box"
+            >
+                <i class="arrow left"></i>
+                <div
+                    class="timeline-line"
+                    style="width: 100%; background: #efefef; height: 2px; margin: 4px -10px;"
+                ></div>
+                <i class="arrow right"></i>
+            </div>
+            <!--Timeline-->
+        </div>
+        <!--Header-->
+        <!--Path-->
+        <div class="slds-size_12-of-12 slds-path">
+            <div class="slds-grid slds-path__track">
+                <div class="slds-grid slds-path__scroller-container">
+                    <div class="slds-path__scroller" role="application">
+                        <div class="slds-path__scroller_inner">
+                            <ul
+                                class="slds-path__nav"
+                                role="listbox"
+                                aria-orientation="horizontal"
+                            >
+                                <li
+                                    class="slds-path__item opportunity-phase"
+                                    data-identifier="evaluate"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="evaluate"
+                                        href="javascript:void(0);"
+                                        id="1"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Evaluate</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item opportunity-phase"
+                                    data-identifier="contract"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        data-identifier="contract"
+                                        href="javascript:void(0);"
+                                        id="2"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Contract</span
+                                        >
+                                    </a>
+                                </li>
+                                <!--<li
+                                    class="slds-path__item"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        href="javascript:void(0);"
+                                        id="x"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <svg
+                                            class="slds-icon slds-icon_x-small"
+                                            style="fill: #666;
+                                    display: block;
+                                    margin: 0 auto;"
+                                            aria-hidden="true"
+                                        >
+                                            <use
+                                                xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#edit"
+                                            ></use>
+                                        </svg>
+                                        <span class="">SOW Signed</span>
+                                    </a>
+                                </li>-->
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="provisioning"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        data-identifier="provisioning"
+                                        href="javascript:void(0);"
+                                        id="3"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Provisioning</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="prepare"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        data-identifier="prepare"
+                                        href="javascript:void(0);"
+                                        id="4"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Prepare</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="design"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        data-identifier="design"
+                                        href="javascript:void(0);"
+                                        id="5"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Design</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="construct"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="false"
+                                        class="slds-path__link"
+                                        data-identifier="construct"
+                                        href="javascript:void(0);"
+                                        id="6"
+                                        role="option"
+                                        tabindex="-1"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__stage"> </span>
+                                        <span class="slds-path__title"
+                                            >Construct</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="validate"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="validate"
+                                        href="javascript:void(0);"
+                                        id="7"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Validate</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="deploy"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="deploy"
+                                        href="javascript:void(0);"
+                                        id="8"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Deploy</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="goLive"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="goLive"
+                                        href="javascript:void(0);"
+                                        id="9"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Go-Live</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="transition"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="transition"
+                                        href="javascript:void(0);"
+                                        id="10"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Transition</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item implementation-phase"
+                                    data-identifier="evolve"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="evolve"
+                                        href="javascript:void(0);"
+                                        id="11"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Evolve</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item steady-phase"
+                                    data-identifier="run"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="run"
+                                        href="javascript:void(0);"
+                                        id="12"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Run</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item steady-phase"
+                                    data-identifier="operate"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="operate"
+                                        href="javascript:void(0);"
+                                        id="13"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Operate</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="slds-path__item steady-phase"
+                                    data-identifier="update"
+                                    role="presentation"
+                                >
+                                    <a
+                                        aria-selected="true"
+                                        class="slds-path__link"
+                                        data-identifier="update"
+                                        href="javascript:void(0);"
+                                        id="14"
+                                        role="option"
+                                        tabindex="0"
+                                        onclick={handleDisplayStepModal}
+                                    >
+                                        <span class="slds-path__title"
+                                            >Update</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Path-->
+    </div>
+
+    <template if:true={displayStepModal}>
+        <jda-modal
+            step={step}
+            onclosestepmodal={handleCloseStepModal}
+            onselectedcontact={handleSelectedContact}
+        ></jda-modal>
+    </template>
+
+    <template if:true={displayContactToast}>
+        <div
+            class="slds-notify slds-notify_toast slds-theme_info toast-contact-absolute"
+            role="status"
+        >
+            <span class="slds-assistive-text">info</span>
+            <span
+                class="slds-icon_container slds-icon-utility-info slds-m-right_small slds-no-flex slds-align-top"
+                title="Description of icon when needed"
+            >
+                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use
+                        xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#info"
+                    ></use>
+                </svg>
+            </span>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small">
+                    {contactToastMessage}
+                </h2>
+            </div>
+            <div class="slds-notify__close">
+                <button
+                    class="slds-button slds-button_icon slds-button_icon-inverse"
+                    title="Close"
+                    onclick={handleOnCloseContactToast}
+                >
+                    <svg
+                        class="slds-button__icon slds-button__icon_large"
+                        aria-hidden="true"
+                    >
+                        <use
+                            xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#close"
+                        ></use>
+                    </svg>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            </div>
+        </div>
+    </template>
+    <template if:true={displayPhasesToast}>
+        <div
+            class="slds-notify slds-notify_toast slds-theme_info toast-phases-absolute"
+            role="status"
+        >
+            <span class="slds-assistive-text">info</span>
+            <span
+                class="slds-icon_container slds-icon-utility-info slds-m-right_small slds-no-flex slds-align-top"
+                title="Description of icon when needed"
+            >
+                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use
+                        xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#info"
+                    ></use>
+                </svg>
+            </span>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small">
+                    {phasesToastMessage}
+                </h2>
+            </div>
+            <div class="slds-notify__close">
+                <button
+                    class="slds-button slds-button_icon slds-button_icon-inverse"
+                    title="Close"
+                    onclick={handleOnClosePhasesToast}
+                >
+                    <svg
+                        class="slds-button__icon slds-button__icon_large"
+                        aria-hidden="true"
+                    >
+                        <use
+                            xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#close"
+                        ></use>
+                    </svg>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            </div>
+        </div>
+    </template>
+</template>
