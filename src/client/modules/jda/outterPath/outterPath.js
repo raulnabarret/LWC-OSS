@@ -29,7 +29,7 @@ export default class OutterPath extends LightningElement {
                     id: 'venkataPavanDirisala'
                 },
                 {
-                    name: 'CPM: Celso Ramirez',
+                    name: 'COL: Celso Ramirez',
                     id: 'celsoRamirez'
                 },
                 {
@@ -89,7 +89,7 @@ export default class OutterPath extends LightningElement {
                     id: 'dianeDurden'
                 },
                 {
-                    name: 'CPM: Ana Salinas',
+                    name: 'COL: Ana Salinas',
                     id: 'anaSalinas'
                 }
             ],
@@ -205,7 +205,7 @@ export default class OutterPath extends LightningElement {
                     id: 'dianeDurden'
                 },
                 {
-                    name: 'CPM: Celso Ramirez',
+                    name: 'COL: Celso Ramirez',
                     id: 'celsoRamirez'
                 },
                 {
@@ -261,7 +261,7 @@ export default class OutterPath extends LightningElement {
                     id: 'dianeDurden'
                 },
                 {
-                    name: 'CPM: Rogelio Castillo',
+                    name: 'COL: Rogelio Castillo',
                     id: 'rogelioCastillo'
                 },
                 {
@@ -322,7 +322,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -337,7 +338,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -345,14 +347,28 @@ export default class OutterPath extends LightningElement {
             name: 'Athulya Swaminathan',
             jobTitle: 'Sr. Business Consultant',
             timeInPosition: '1.3',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'venkataPavanDirisala',
             name: 'Venkata Pavan Dirisala',
             jobTitle: 'Contractor',
             timeInPosition: null,
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'anaBorbolla',
@@ -366,7 +382,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -381,7 +398,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -431,7 +449,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -446,7 +465,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -454,21 +474,42 @@ export default class OutterPath extends LightningElement {
             name: 'Bill Benedict',
             jobTitle: 'Solution Architect',
             timeInPosition: '1.8',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'armanbirAhluwalia',
             name: 'Armanbir Ahluwalia',
             jobTitle: 'Business Consultant Int.',
             timeInPosition: '0.3',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'venkateshKattamanchi',
             name: 'Venkatesh Kattamanchi',
             jobTitle: 'Technical Architect',
             timeInPosition: '0.3',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'alejandroRodríguez',
@@ -482,7 +523,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -490,21 +532,42 @@ export default class OutterPath extends LightningElement {
             name: 'Dan Nienhuis',
             jobTitle: 'Sr. Solution Architect',
             timeInPosition: '1.1',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'cristinaRomero',
             name: 'Cristina Romero',
             jobTitle: 'Sr. Business Consultant',
             timeInPosition: '1.4',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'lopamudraDas',
             name: 'Lopamudra Das',
             jobTitle: 'Sr. Technical Consultant',
             timeInPosition: '2.3',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'violetaCortes',
@@ -518,7 +581,8 @@ export default class OutterPath extends LightningElement {
                 'construct',
                 'validate',
                 'deploy',
-                'transition'
+                'transition',
+                'goLive'
             ]
         },
         {
@@ -526,28 +590,35 @@ export default class OutterPath extends LightningElement {
             name: 'Luis Cornejo',
             jobTitle: 'Technical Architect',
             timeInPosition: '0.3',
-            phases: ['design', 'construct', 'validate', 'deploy', 'transition']
+            phases: [
+                'design',
+                'construct',
+                'validate',
+                'deploy',
+                'transition',
+                'goLive'
+            ]
         },
         {
             id: 'rogelioCastillo',
             name: 'Rogelio Castillo',
             jobTitle: 'Project Manager Int. (Cloud-Onboarding)',
             timeInPosition: '3.9',
-            phases: ['cloudOnboarding', 'hypercare', 'transition']
+            phases: ['cloudOnboarding', 'hypercare', 'transition', 'goLive']
         },
         {
             id: 'celsoRamirez',
             name: 'Celso Ramirez',
             jobTitle: 'Project Manager Int. (Cloud-Onboarding)',
             timeInPosition: '1.3',
-            phases: ['cloudOnboarding', 'hypercare', 'transition']
+            phases: ['cloudOnboarding', 'hypercare', 'transition', 'goLive']
         },
         {
             id: 'anaSalinas',
             name: 'Ana Salinas ',
             jobTitle: 'Project Manager (Cloud-Onboarding)',
             timeInPosition: '0.8',
-            phases: ['cloudOnboarding', 'hypercare', 'transition']
+            phases: ['cloudOnboarding', 'hypercare', 'transition', 'goLive']
         }
     ];
     @api step = '';
@@ -609,7 +680,7 @@ export default class OutterPath extends LightningElement {
                 this.selectedContact.phases.includes(step.dataset.identifier)
             );
             stepsWithContact.forEach(step =>
-                step.classList.add('slds-is-current')
+                step.classList.add('is-participant')
             );
             // eslint-disable-next-line @lwc/lwc/no-async-operation
             window.setTimeout(
@@ -617,7 +688,7 @@ export default class OutterPath extends LightningElement {
                     this.displayPhasesToast = false;
                     this.displayContactToast = false;
                     stepsWithContact.forEach(step =>
-                        step.classList.remove('slds-is-current')
+                        step.classList.remove('is-participant')
                     );
                 }.bind(this),
                 10000

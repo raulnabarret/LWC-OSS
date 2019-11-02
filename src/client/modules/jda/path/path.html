@@ -12,6 +12,88 @@
         <div class="slds-col slds-grid slds-wrap paths-box">
             <div class="slds-size_12-of-12 slds-m-bottom_small">
                 <jda-outter-path code-number={codeNumber}> </jda-outter-path>
+                <div
+                    class="slds-grid slds-path__track"
+                    style="max-width: 300px;
+                float: right;
+                margin-top: 8px;"
+                >
+                    <div class="slds-grid slds-path__scroller-container">
+                        <div class="slds-path__scroller" role="application">
+                            <div class="slds-path__scroller_inner">
+                                <ul
+                                    class="slds-path__nav"
+                                    role="listbox"
+                                    aria-orientation="horizontal"
+                                >
+                                    <li
+                                        class="slds-path__item steady-phase"
+                                        data-identifier="run"
+                                        role="presentation"
+                                        style="width: 95px;"
+                                    >
+                                        <a
+                                            aria-selected="true"
+                                            class="slds-path__link"
+                                            data-identifier="run"
+                                            href="javascript:void(0);"
+                                            id="12"
+                                            role="option"
+                                            tabindex="0"
+                                            onclick={handleDisplayStepModal}
+                                        >
+                                            <span class="slds-path__title"
+                                                >Run</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slds-path__item steady-phase"
+                                        data-identifier="operate"
+                                        role="presentation"
+                                        style="width: 95px;"
+                                    >
+                                        <a
+                                            aria-selected="true"
+                                            class="slds-path__link"
+                                            data-identifier="operate"
+                                            href="javascript:void(0);"
+                                            id="13"
+                                            role="option"
+                                            tabindex="0"
+                                            onclick={handleDisplayStepModal}
+                                        >
+                                            <span class="slds-path__title"
+                                                >Operate</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slds-path__item steady-phase"
+                                        data-identifier="update"
+                                        role="presentation"
+                                        style="width: 95px;"
+                                    >
+                                        <a
+                                            aria-selected="true"
+                                            class="slds-path__link"
+                                            data-identifier="update"
+                                            href="javascript:void(0);"
+                                            id="14"
+                                            role="option"
+                                            tabindex="0"
+                                            onclick={handleDisplayStepModal}
+                                        >
+                                            <span class="slds-path__title"
+                                                >Update</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="slds-size_12-of-12">
                 <jda-inner-path></jda-inner-path>

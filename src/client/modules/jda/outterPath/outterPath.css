@@ -40,6 +40,11 @@ li.slds-path__item.opportunity-phase::after {
 
 li.slds-path__item.slds-is-current.opportunity-phase::before,
 li.slds-path__item.slds-is-current.opportunity-phase::after {
+    background: #00313d !important;
+}
+
+li.slds-path__item.is-participant.opportunity-phase::before,
+li.slds-path__item.is-participant.opportunity-phase::after {
     background: #005265 !important;
 }
 
@@ -51,6 +56,11 @@ li.slds-path__item.implementation-phase::after {
 
 li.slds-path__item.slds-is-current.implementation-phase::before,
 li.slds-path__item.slds-is-current.implementation-phase::after {
+    background: #6d2b08 !important;
+}
+
+li.slds-path__item.is-participant.implementation-phase::before,
+li.slds-path__item.is-participant.implementation-phase::after {
     background: #b6480e !important;
 }
 
@@ -62,6 +72,11 @@ li.slds-path__item.steady-phase::after {
 
 li.slds-path__item.slds-is-current.steady-phase::before,
 li.slds-path__item.slds-is-current.steady-phase::after {
+    background: #4c660d !important;
+}
+
+li.slds-path__item.is-participant.steady-phase::before,
+li.slds-path__item.is-participant.steady-phase::after {
     background: #7eaa16 !important;
 }
 
